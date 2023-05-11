@@ -1,5 +1,4 @@
-#Telepítés
-#Futtató környezethez szükséges eszközök
+#Telepítés -- Futtató környezethez szükséges eszközök
 
 -   NodeJS: https://nodejs.org/en
 

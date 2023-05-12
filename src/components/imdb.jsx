@@ -18,10 +18,6 @@ const IMDB_COMP = (props) => {
             });
     }, []);
 
-    useEffect(() => {
-        console.log(formattedData);
-    }, [formattedData]);
-
     const addPegi = (data) => {
         data.forEach((item) => {
             if (

@@ -1,8 +1,6 @@
 import axios from "axios";
 
-// const BASE_URL = "https://crudcrud.com/api/7f9d8116f4854fc8a1e2dc0a8635bf34";
-
-const BASE_URL = "https://localhost:5000";
+const BASE_URL = "https://crudcrud.com/api/3fff2f97513842bf933d7b0182bf3f90";
 
 export const getAllMovies = () => {
     return axios.get(`${BASE_URL}`);
@@ -20,5 +18,5 @@ export const deleteMovieById = () => {
 };
 
 export const updateMovie = (movie) => {
-    return axios.put(`${BASE_URL}/updateAllMovies`, movie);
+    return axios.post(`${BASE_URL}/movies/`, movie);
 };

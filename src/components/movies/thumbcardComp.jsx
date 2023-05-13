@@ -3,10 +3,10 @@ import { useState } from "react";
 const MovieComp = ({ movie }) => {
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <div className={`rounded select-none`} key={movie.id}>
-            <div className="relative w-[95%]">
+        <div className="rounded select-none" key={movie.id}>
+            <div className="relative w-full flex items-center justify-center">
                 <img
-                    className={`transition duration-500 ease-in-out p-1 rounded-lg h-60 mx-auto ${
+                    className={`transition duration-500 ease-in-out rounded-lg h-66 lg:h-96 mx-auto ${
                         isHovered ? "" : "animate-anim-zoom-out"
                     }`}
                     src={movie.image}

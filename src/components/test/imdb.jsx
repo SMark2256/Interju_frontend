@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import { ImdbApi } from "../api/imdbapi";
-import { updateMovie } from "../api/requests";
+import { ImdbApi } from "../../api/imdbapi";
+import { updateMovie } from "../../api/requests";
 
-const IMDB_COMP = (props) => {
-    const { setMovies } = props.moviesObj;
+const IMDB_COMP = () => {
     const [data, setData] = useState();
     const [formattedData, setFormattedData] = useState();
 
@@ -17,6 +16,10 @@ const IMDB_COMP = (props) => {
                 console.error("Error fetching users:", error);
             });
     }, []);
+
+    useEffect(() => {
+        console.log("formattedData", formattedData);
+    }, [formattedData]);
 
     const addPegi = (data) => {
         data.forEach((item) => {
@@ -35,7 +38,7 @@ const IMDB_COMP = (props) => {
                 item.pegi = 16;
             }
         });
-        setMovies(
+        setFormattedData(
             data.map((item) => ({
                 title: item.title,
                 director: item.director,
@@ -49,8 +52,8 @@ const IMDB_COMP = (props) => {
         );
     };
 
-    const updateMovies = (movie) => {
-        updateMovie(movie)
+    const uploadOneItem = (item) => {
+        updateMovie(item)
             .then(() => {
                 console.log("updated");
             })
@@ -59,16 +62,26 @@ const IMDB_COMP = (props) => {
             });
     };
 
+    const updateMovies = (movie) => {
+        movie.map((item) => uploadOneItem(item));
+    };
+
     return (
-        <>
+        <div className="flex flex-row">
             <div
-                className="text-white bg-gray-800"
+                className="text-white bg-gray-800 hover:cursor-pointer select-none hover:underline w-32 text-center"
                 onClick={() => addPegi(data)}
             >
                 imdb
             </div>
-            {/* <div onClick={() => updateMovies(formattedData)}>unicorn</div>; */}
-        </>
+            <div
+                className="text-white hover:cursor-pointer select-none hover:underline text-center w-32"
+                onClick={() => updateMovies(formattedData)}
+            >
+                unicorn
+            </div>
+            ;
+        </div>
     );
 };
 

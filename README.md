@@ -8,5 +8,5 @@
 
 #crudcrud api feltöltés
 
--   A crudcrud api tartalmát egy rapidapi segítségével "https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/" töltöttem fel
--   Ennek forráskódját megtekinthetőség céljából meghagytam ./src/api/imdbapi.js & ./src/components/test/imdb.jsx
+-   A crudcrud api tartalmát egy rapidapi segítségével 'https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/' töltöttem fel
+-   Ennek forráskódját megtekinthetőség céljából meghagytam './src/api/imdbapi.js' & './src/components/test/imdb.jsx'

@@ -4,7 +4,7 @@ import { CgAdidas } from "react-icons/cg";
 const HeaderComp = ({ sideBarOpen }) => {
     return (
         <div
-            className={`h-20 sticky select-none bg-black text-red font-bold  text-red-600 flex items-center justify-center md:w-full w-full border-r border-gray-800/40  
+            className={`h-20 sticky select-none bg-gray-950/40 text-red font-bold  text-red-600 flex items-center justify-center md:w-full w-full border-r border-gray-800/40  
             }`}
         >
             <h1
@@ -23,7 +23,7 @@ const HeaderComp = ({ sideBarOpen }) => {
                 </p>
                 <CgAdidas
                     className={`text-white mt-1 ${
-                        sideBarOpen ? "text-2xl" : "text-4xl"
+                        sideBarOpen ? "text-2xl" : "text-4xl ml-2 mr-2"
                     }`}
                 />
             </h1>

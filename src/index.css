@@ -5,19 +5,24 @@
 /* Firefox */
 * {
     scrollbar-width: thin;
+    scrollbar-color: #00000000;
+    scrollbar-thumb-color: #00000000;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 15px;
+    width: 0px;
+    background-color: #00000000;
 }
 
 *::-webkit-scrollbar-track {
     border-radius: 5px;
+    background-color: #00000000;
 }
 
 *::-webkit-scrollbar-thumb {
     border-radius: 14px;
+    background-color: #00000000;
 }
 
 body {

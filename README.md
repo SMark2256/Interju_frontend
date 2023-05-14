@@ -1,4 +1,4 @@
-## Telepítés
+# Telepítés
 
 -   Telepítsd a Node.js-t a számítógépedre a [Node.js hivatalos weboldaláról](https://nodejs.org/). Ajánlott a LTS (Long-Term Support) verzió letöltése.
 
@@ -16,7 +16,9 @@ node --version
 git clone https://github.com/SMark2256/Interju_frontend.git
 ```
 
-## Futtatás - Build
+## Futtatás
+
+# Build
 
 -   A projekt mappájában már egy előre lebuildelt verziót is lehet találni, az egyszerűbb futattás érdekében.
 
@@ -26,24 +28,20 @@ git clone https://github.com/SMark2256/Interju_frontend.git
 serve -s build
 ```
 
-## Futtatás - npm start
+# npm start
 
-# npm csomagok telepítése
-
--   Powershell segítségével a projekt mappájában állva:
+-   npm csomagok telepítése: Powershell segítségével a projekt mappájában állva:
 
 ```shell
 npm install
 ```
 
-# npm start
-
--   Powershell segítségével a projekt mappájában állva:
+-   npm start: Powershell segítségével a projekt mappájában állva:
 
 ```shell
 npm start
 ```
 
-## Dokumentáció
+# Dokumentáció
 
-# Api
+## Api

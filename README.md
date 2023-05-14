@@ -215,8 +215,12 @@ mappingMovies
 -   A ki renderelt film listában két féle kártyával találkozunk, egy `thumbcardComp.jsx`-ben létrehozott kisebb kártyákkal és egy `detailscardComp.js`-ben létrehozott nagyobb és a film részleteit leíró kártyával
 
 -   ThumbCardComp:
+    ![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/bca5713e-6855-4ee7-b0dc-d99a1de7975f)
+
 
 -   DetailsCardComp:
+    ![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/79ed0587-11ac-480e-b83e-6265e30d17a8)
+
 
 #### Szűrés
 

@@ -44,6 +44,14 @@ npm start
 
 # Dokumentáció
 
+## Felhasznált npm csomagok
+
+-   axios
+-   tailwindcss
+-   react-icons
+-   framer-motion
+-   sweetalert2
+
 ## Api
 
 ### URL
@@ -137,4 +145,93 @@ export const updateMovie = (movie) => {
 
     return axios.put(`${BASE_URL}/movies/${movie._id}`, details);
 };
+```
+
+## Komponensek & Működés
+
+### src/App.js
+
+-   Egy useEffect-ben oldottam meg az összes film lekérését
+-   Szerettem volna, hogy az oldal frissülésekor vagy a felhasználói műveletek során történjen csak egy új lekérés
+
+#### Példa kód
+
+```javascript
+useEffect(() => {
+    getMovies()
+        .then((res) => {
+            setMovies(res.data);
+            setFilteredMovies(res.data);
+        })
+        .catch((err) => console.log(err));
+    setRefresh(false);
+}, [movies === null || refresh === true]);
+```
+
+### Komponensek & Működés
+
+-   A legtöbb esetben törekedtem arra hogy a komponenseknek egy objektumban, átláthatóbb módon adjam át a szükséges változókat.
+
+#### Példa kód
+
+```javascript
+//app.js line:11
+const moviesObj = {
+    movies,
+    setMovies,
+    sideBarOpen,
+    setSelectedMovie,
+    setAddMovieClicked,
+    filteredMovies,
+    setFilteredMovies,
+};
+//app.js line:83
+<MovieListComp moviesObj={moviesObj} />;
+```
+
+### src/components/movies/list/movielistComp.jsx
+
+-   A filmek listázásáért felelős komponenst úgy hoztam létre hogy egy fő `movielistComp.jsx`-ben történik, ezt egy mappeléssel valósítottam meg
+
+#### Példa kód
+
+```javascript
+mappingMovies
+    .slice()
+    .reverse()
+    .map((movie, index) => (
+        <motion.li key={index} variants={item}>
+            <ThumbCardComp
+                movie={movie}
+                setSelectedMovie={setSelectedMovie}
+                key={index}
+            />
+        </motion.li>
+    ));
+```
+
+#### Kártyák
+
+-   A ki renderelt film listában két féle kártyával találkozunk, egy `thumbcardComp.jsx`-ben létrehozott kisebb kártyákkal és egy `detailscardComp.js`-ben létrehozott nagyobb és a film részleteit leíró kártyával
+
+-   ThumbCardComp:
+
+-   DetailsCardComp:
+
+#### Szűrés
+
+-   Létrehoztam a szűrés céljából egy `filteredMovies` tömböt.
+-   Ezt a tömböt csak akkor töltöm fel tartalommal hogy ha a szűrés aktív.
+-   Így a List
+
+#### Példa kód
+
+```javascript
+useEffect(() => {
+    if (filteredMovies != null) {
+        setMappingMovies(filteredMovies);
+    } else {
+        setMappingMovies(movies);
+    }
+}, [filteredMovies, movies]);
 ```

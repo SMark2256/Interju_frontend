@@ -12,4 +12,5 @@
 -   Ennek forráskódját megtekinthetőség céljából meghagytam './src/api/imdbapi.js' & './src/components/test/imdb.jsx'
 
 
-![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/db70e747-d25c-4e12-aabc-57edb96ea1f2)
+
+![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/290c7753-e656-46db-bc77-8cdea48a61c2)

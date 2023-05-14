@@ -64,7 +64,7 @@ npm install
 npm start
 ```
 
-#IMDB API
+# IMDB API
 
 crudcrud API feltöltésének céljából egy free API-t felhasználva `https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/`
 

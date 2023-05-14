@@ -1,7 +1,7 @@
 import { AiOutlineCloseSquare, AiOutlineSave } from "react-icons/ai";
 import { MdDeleteOutline } from "react-icons/md";
 import { useState } from "react";
-import { deleteMovieById, getMovies, updateMovie } from "../../../api/requests";
+import { deleteMovieById, updateMovie } from "../../../api/requests";
 import EditableText from "../utils/editabletext";
 import Swal from "sweetalert2";
 

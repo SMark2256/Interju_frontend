@@ -1,3 +1,13 @@
+# Leírás
+
+-   Ez egy film nyilvántartó oldal, ahol lehet filmet hozzáadni, törölni és módosításani
+
+Az oldal reszponzív, Asztali PC és Mobiltelefonon is egyaránt használható!
+
+## Mobil
+
+## PC
+
 # Telepítés
 
 -   Telepítsd a Node.js-t a számítógépedre a [Node.js hivatalos weboldaláról](https://nodejs.org/). Ajánlott a LTS (Long-Term Support) verzió letöltése.
@@ -210,20 +220,6 @@ mappingMovies
     ));
 ```
 
-#### Kártyák
-
--   A ki renderelt film listában két féle kártyával találkozunk, egy `thumbcardComp.jsx`-ben létrehozott kisebb kártyákkal és egy `detailscardComp.js`-ben létrehozott nagyobb és a film részleteit leíró kártyával
-
--   ThumbCardComp:
-
--   ![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/bca5713e-6855-4ee7-b0dc-d99a1de7975f)
-
-
--   DetailsCardComp:
-
--   ![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/4bfb2333-6a91-43b1-a30d-d24bbf8e53eb)
-
-
 #### Szűrés
 
 -   Létrehoztam a szűrés céljából egy `filteredMovies` tömböt.
@@ -240,4 +236,53 @@ useEffect(() => {
         setMappingMovies(movies);
     }
 }, [filteredMovies, movies]);
+```
+
+#### Kártyák
+
+-   A ki renderelt film listában két féle kártyával találkozunk, egy `thumbcardComp.jsx`-ben létrehozott kisebb kártyákkal és egy `detailscardComp.jsx`-ben létrehozott nagyobb és a film részleteit leíró kártyával
+
+##### Filmet módosítani és törölni csak a Nagyobb kártyán lehet módosításani!!
+
+-   Ehhez a kis tollakra kattintva a kijelt sort tudjuk felülírni madj a pipa ikonnal véglegesíteni a felülírást.
+-   A film módosításához, a mezők felülírását követően, a flopi ikonra kell kattintani!
+
+##### Kisseb kártya:
+
+![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/bca5713e-6855-4ee7-b0dc-d99a1de7975f)
+
+##### Nagyobb kártya:
+
+![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/4bfb2333-6a91-43b1-a30d-d24bbf8e53eb)
+
+##### Példa kódok
+
+-   Film módosítás:
+
+```javascript
+const handleUpdate = () => {
+    updateMovie(selectedMovie)
+        .then((res) => {
+            setUpdatemsg(res.statusText);
+            setRefresh(true);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+};
+```
+
+-   Film törlés:
+
+```javascript
+const handleDelete = () => {
+    deleteMovieById(selectedMovie._id)
+        .then((res) => {
+            setDeletemsg(res.statusText);
+            setRefresh(true);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+};
 ```

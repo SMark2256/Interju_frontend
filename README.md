@@ -2,17 +2,23 @@
 
 -   Ez egy film nyilvántartó oldal, ahol lehet filmet hozzáadni, törölni és módosításani
 
-Az oldal reszponzív, Asztali PC és Mobiltelefonon is egyaránt használható!
+## Az oldal reszponzív, Asztali PC és Mobiltelefonon is egyaránt használható!
 
-## Mobil
+### Mobil
 
 ![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/ba9d3a60-1921-4c87-9869-46768aa68bbf)
 
 
-## PC
+- A menu kinyitható és az Age menüpontra nyomva a korhatár szűrési lehetőségek is megfognak jelenni.
+
+
+### PC
 
 ![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/e811fe3a-9742-4700-96d3-ee716100618a)
 
+## Használat
+
+- Mindkét használati esetben, a film képekre kattintva a `More...`-ra kattintással, megtekinthetjük a film részleteit és itt módosíthatjuk vagy törölhetjük azt.
 
 # Telepítés
 

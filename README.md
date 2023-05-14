@@ -2,6 +2,12 @@
 
 -   Telepítsd a Node.js-t a számítógépedre a [Node.js hivatalos weboldaláról](https://nodejs.org/). Ajánlott a LTS (Long-Term Support) verzió letöltése.
 
+-   A telepítést követően ellenőrzés céljából nyissunk egy powershell-t és adjuk ki a következő parancsot:
+
+```shell
+node --version
+```
+
 ## Repository Klónozás
 
 -   Klónozd le a repository-t hogy futtatni tudd a projektet.
@@ -22,16 +28,22 @@ serve -s build
 
 ## Futtatás - npm start
 
-#npm csomagok telepítése
+# npm csomagok telepítése
 
-1. Powershell segítségével a projekt mappájában állva:
+-   Powershell segítségével a projekt mappájában állva:
 
 ```shell
 npm install
 ```
 
-#npm start 2. Powershell segítségével a projekt mappájában állva:
+# npm start
+
+-   Powershell segítségével a projekt mappájában állva:
 
 ```shell
 npm start
 ```
+
+## Dokumentáció
+
+# Api

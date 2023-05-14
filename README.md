@@ -70,6 +70,8 @@ export const getMovies = () => {
 
 ## Film hozzáadása
 
+A `postMovie` végpont segítségével új filmeket adhatunk hozzá.
+
 ### Végpont
 
 ```bash
@@ -90,7 +92,7 @@ export const postMovie = (movie) => {
 
 ## Film törlése
 
-### A `deleteMovieById` végpont segítségével törölhetünk egy filmet az azonosítója alapján.
+A `deleteMovieById` végpont segítségével törölhetünk egy filmet az azonosítója alapján.
 
 ### Végpont
 
@@ -112,7 +114,7 @@ export const deleteMovieById = (id) => {
 
 ## Film frissitése
 
-### A `updateMovie` végpont segítségével frissíthetjük egy film adatait.
+A `updateMovie` végpont segítségével frissíthetjük egy film adatait.
 
 ### Végpont
 

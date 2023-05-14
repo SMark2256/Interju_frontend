@@ -9,17 +9,12 @@ const IMDB_COMP = () => {
     useEffect(() => {
         ImdbApi()
             .then((response) => {
-                console.log(response.data);
                 setData(response.data);
             })
             .catch((error) => {
                 console.error("Error fetching users:", error);
             });
     }, []);
-
-    useEffect(() => {
-        console.log("formattedData", formattedData);
-    }, [formattedData]);
 
     const addPegi = (data) => {
         data.forEach((item) => {

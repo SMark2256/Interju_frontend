@@ -19,7 +19,7 @@ const HeaderComp = ({ sideBarOpen }) => {
                             : "absolute invisible md:visible md:relative"
                     }`}
                 >
-                    BLYATFLIX
+                    SAMPLE
                 </p>
                 <CgAdidas
                     className={`text-white mt-1 ${

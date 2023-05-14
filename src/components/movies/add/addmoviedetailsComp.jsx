@@ -30,7 +30,6 @@ const AddMovieDetailsComp = (props) => {
         postMovie(newMovie)
             .then((res) => {
                 setAlertmsg(res.statusText);
-                console.log(res.statusText);
             })
             .catch((err) => console.log(err));
         setRefresh(true);

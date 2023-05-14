@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { BsPencilFill } from "react-icons/bs";
 import { MdFileDownloadDone } from "react-icons/md";
 
@@ -16,8 +16,6 @@ const EditableText = ({ name, data, selectedMovie, setSelectedMovie }) => {
 
     const saveChange = () => {
         setSelectedMovie({ ...selectedMovie, [name]: text });
-        console.log("pipa");
-        console.log({ [name]: text });
         setIsEditing(false);
     };
 

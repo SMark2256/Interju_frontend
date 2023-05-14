@@ -1,16 +1,37 @@
-#Telepítés -- Futtató környezethez szükséges eszközök
+## Telepítés
 
--   NodeJS: https://nodejs.org/en
+-   Telepítsd a Node.js-t a számítógépedre a [Node.js hivatalos weboldaláról](https://nodejs.org/). Ajánlott a LTS (Long-Term Support) verzió letöltése.
 
-#Futtatás
+## Repository Klónozás
 
--   A Projekt könyvtárából egy Powershell parancssorból kiadunk egy "npm i" parancsot, ezzel telepítjük az összes npm csomagot.
+-   Klónozd le a repository-t hogy futtatni tudd a projektet.
 
-#crudcrud api feltöltés
+```shell
+git clone https://github.com/SMark2256/Interju_frontend.git
+```
 
--   A crudcrud api tartalmát egy rapidapi segítségével 'https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/' töltöttem fel
--   Ennek forráskódját megtekinthetőség céljából meghagytam './src/api/imdbapi.js' & './src/components/test/imdb.jsx'
+## Futtatás - Build
 
+-   A projekt mappájában már egy előre lebuildelt verziót is lehet találni, az egyszerűbb futattás érdekében.
 
+-   Ehhez powershell segítségével a projekt mappájából adjuk ki a következő parancsot:
 
-![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/290c7753-e656-46db-bc77-8cdea48a61c2)
+```shell
+serve -s build
+```
+
+## Futtatás - npm start
+
+#npm csomagok telepítése
+
+1. Powershell segítségével a projekt mappájában állva:
+
+```shell
+npm install
+```
+
+#npm start 2. Powershell segítségével a projekt mappájában állva:
+
+```shell
+npm start
+```

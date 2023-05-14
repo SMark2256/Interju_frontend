@@ -5,6 +5,7 @@ import { useState } from "react";
 const SidebarComp = (props) => {
     const { sideBarOpen, setSideBarOpen, movies, setFilteredMovies } =
         props.sidebarObj;
+
     const [pegi, setPegi] = useState(null);
     const [ageListOpened, setAgeListOpened] = useState(false);
 
@@ -40,12 +41,9 @@ const SidebarComp = (props) => {
             <div
                 className={`bg-gray-950/40 border-r border-gray-800/40 text-gray-200/90  h-full`}
             >
-                {/* Mobile Size (Hamburger Menu) */}
                 <div className="md:invisible w-full" onClick={handleSidebar}>
                     <GiHamburgerMenu className="text-xl flex mx-auto items-center justify-center" />
                 </div>
-
-                {/* Dropdown Menus */}
                 <div className="my-20 space-y-2 text-center w-full select-none">
                     <div
                         className={`pb-2 ${
@@ -82,8 +80,7 @@ const SidebarComp = (props) => {
                                 } rounded`}
                             >
                                 <span onClick={handleDeleteFilter}>
-                                    {" "}
-                                    All Movies{" "}
+                                    All Movies
                                 </span>
                             </div>
                             <div
@@ -92,8 +89,7 @@ const SidebarComp = (props) => {
                                 } `}
                             >
                                 <span name="18" onClick={handleFilterByPegi}>
-                                    {" "}
-                                    18+{" "}
+                                    18+
                                 </span>
                             </div>
                             <div
@@ -102,8 +98,7 @@ const SidebarComp = (props) => {
                                 } `}
                             >
                                 <span name="16" onClick={handleFilterByPegi}>
-                                    {" "}
-                                    16+{" "}
+                                    16+
                                 </span>
                             </div>
                             <div
@@ -112,8 +107,7 @@ const SidebarComp = (props) => {
                                 } `}
                             >
                                 <span name="12" onClick={handleFilterByPegi}>
-                                    {" "}
-                                    12+{" "}
+                                    12+
                                 </span>
                             </div>
                             <div
@@ -122,8 +116,7 @@ const SidebarComp = (props) => {
                                 } rounded`}
                             >
                                 <span name="7" onClick={handleFilterByPegi}>
-                                    {" "}
-                                    7+{" "}
+                                    7+
                                 </span>
                             </div>
                         </div>

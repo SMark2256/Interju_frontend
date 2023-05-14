@@ -1,12 +1,11 @@
-import ThumbCardComp from "../cards/thumbcardComp";
-import { motion } from "framer-motion";
-import AddMovieComp from "../add/addmoviethumbComp";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import ThumbCardComp from "../cards/thumbcardComp";
+import AddMovieComp from "../add/addmoviethumbComp";
 
 const MovieListComp = (props) => {
     const {
         movies,
-        setMovies,
         sideBarOpen,
         setSelectedMovie,
         setAddMovieClicked,

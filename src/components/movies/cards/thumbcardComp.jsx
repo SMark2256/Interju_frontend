@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BsQuestionLg } from "react-icons/bs";
+
 const ThumbCardComp = ({ movie, setSelectedMovie }) => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -10,7 +11,7 @@ const ThumbCardComp = ({ movie, setSelectedMovie }) => {
     return (
         <div className="rounded select-none" key={movie.id}>
             <div className="relative w-full flex items-center h-64 lg:h-96 justify-center">
-                {movie.image != "" ? (
+                {movie.image !== "" ? (
                     <img
                         className={`transition duration-500 ease-in-out cursor-pointer rounded-lg h-full mx-auto ${
                             isHovered ? "" : "animate-anim-zoom-out"

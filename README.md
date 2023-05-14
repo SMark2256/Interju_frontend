@@ -20,6 +20,10 @@
 
 - Mindkét használati esetben, a film képekre kattintva a `More...` gomb megnyomásával, megtekinthetjük a film részleteit és itt módosíthatjuk vagy törölhetjük azt.
 
+
+
+
+_______________________________________________________________________________________________
 # Telepítés
 
 -   Telepítsd a Node.js-t a számítógépedre a [Node.js hivatalos weboldaláról](https://nodejs.org/). Ajánlott a LTS (Long-Term Support) verzió letöltése.
@@ -64,6 +68,13 @@ npm install
 npm start
 ```
 
+
+
+
+_______________________________________________________________________________________________
+# Dokumentáció
+
+
 # IMDB API
 
 crudcrud API feltöltésének céljából egy free API-t felhasználva `https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/`
@@ -72,7 +83,6 @@ Ennek kódját érdeklődés jelleggel meghagytam:
 - `src/api/imdbapi.js`
 - `src/components/test/imdb.jsx`  
 
-# Dokumentáció
 
 
 ## Felhasznált npm csomagok

@@ -219,7 +219,7 @@ mappingMovies
 
 
 -   DetailsCardComp:
-    ![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/79ed0587-11ac-480e-b83e-6265e30d17a8)
+    ![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/4bfb2333-6a91-43b1-a30d-d24bbf8e53eb)
 
 
 #### Szűrés

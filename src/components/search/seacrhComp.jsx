@@ -1,6 +1,6 @@
 import React from "react";
 
-const SeacrhComp = () => {
+const SeacrhComp = (props) => {
     return (
         <div className="h-20 flex items-center px-10 py-10 md:px-20 text-white font-bold bg-gray-950/80">
             <input

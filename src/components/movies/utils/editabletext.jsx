@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsPencilFill } from "react-icons/bs";
 import { MdFileDownloadDone } from "react-icons/md";
 
-const EditableText = ({ data }) => {
+const EditableText = ({ name, data, selectedMovie, setSelectedMovie }) => {
     const [isEditing, setIsEditing] = useState(false);
     const [text, setText] = useState(data);
 
@@ -15,10 +15,9 @@ const EditableText = ({ data }) => {
     };
 
     const saveChange = () => {
-        data = text;
-    };
-
-    const handleBlur = () => {
+        setSelectedMovie({ ...selectedMovie, [name]: text });
+        console.log("pipa");
+        console.log({ [name]: text });
         setIsEditing(false);
     };
 
@@ -30,7 +29,6 @@ const EditableText = ({ data }) => {
                     type="text"
                     value={text}
                     onChange={handleChange}
-                    onBlur={handleBlur}
                     autoFocus
                 />
             );
@@ -41,7 +39,6 @@ const EditableText = ({ data }) => {
                     type="text"
                     value={text}
                     onChange={handleChange}
-                    onBlur={handleBlur}
                     autoFocus
                 />
             );

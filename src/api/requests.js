@@ -14,6 +14,9 @@ export const deleteMovieById = (id) => {
     return axios.delete(`${BASE_URL}/movies/${id}`);
 };
 
-export const updateMovie = (id, movie) => {
-    return axios.put(`${BASE_URL}/movies/${id}`, movie);
+export const updateMovie = (movie) => {
+    const details = { ...movie };
+    delete details._id;
+
+    return axios.put(`${BASE_URL}/movies/${movie._id}`, details);
 };

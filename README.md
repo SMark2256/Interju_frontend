@@ -16,9 +16,9 @@ node --version
 git clone https://github.com/SMark2256/Interju_frontend.git
 ```
 
-## Futtatás
+# Futtatás
 
-# Build
+## Build
 
 -   A projekt mappájában már egy előre lebuildelt verziót is lehet találni, az egyszerűbb futattás érdekében.
 
@@ -28,7 +28,7 @@ git clone https://github.com/SMark2256/Interju_frontend.git
 serve -s build
 ```
 
-# npm start
+## npm start
 
 -   npm csomagok telepítése: Powershell segítségével a projekt mappájában állva:
 

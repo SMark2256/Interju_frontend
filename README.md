@@ -71,10 +71,6 @@ npm start
 
 
 
-_______________________________________________________________________________________________
-# Dokumentáció
-
-
 # IMDB API
 
 crudcrud API feltöltésének céljából egy free API-t felhasználva `https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/`
@@ -82,6 +78,10 @@ crudcrud API feltöltésének céljából egy free API-t felhasználva `https://
 Ennek kódját érdeklődés jelleggel meghagytam:
 - `src/api/imdbapi.js`
 - `src/components/test/imdb.jsx`  
+
+
+_______________________________________________________________________________________________
+# Dokumentáció
 
 
 

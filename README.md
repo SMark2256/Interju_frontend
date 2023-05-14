@@ -6,7 +6,13 @@ Az oldal reszponzív, Asztali PC és Mobiltelefonon is egyaránt használható!
 
 ## Mobil
 
+![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/ba9d3a60-1921-4c87-9869-46768aa68bbf)
+
+
 ## PC
+
+![image](https://github.com/SMark2256/Interju_frontend/assets/55351189/e811fe3a-9742-4700-96d3-ee716100618a)
+
 
 # Telepítés
 

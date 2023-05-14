@@ -18,7 +18,7 @@
 
 ## Használat
 
-- Mindkét használati esetben, a film képekre kattintva a `More...`-ra kattintással, megtekinthetjük a film részleteit és itt módosíthatjuk vagy törölhetjük azt.
+- Mindkét használati esetben, a film képekre kattintva a `More...` gomb megnyomásával, megtekinthetjük a film részleteit és itt módosíthatjuk vagy törölhetjük azt.
 
 # Telepítés
 

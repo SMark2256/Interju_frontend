@@ -1,5 +1,6 @@
 {
-	"name": "frontend_test",
+	"homepage": "http://smark2256.github.io/frontend-test",
+	"name": "frontend-test",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {

@@ -1,0 +1,7 @@
+{
+	"hosting": {
+		"site": "portolio-movies",
+		"public": "public",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+	}
+}
